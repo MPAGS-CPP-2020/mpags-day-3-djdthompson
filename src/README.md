@@ -89,6 +89,8 @@ classical ciphers, it is transliterated using the following rules:
 
 At present only the Caesar Cipher is supported.
 
+Functionality to the user has not changed since last week, but underneath the code is running far more effectively with classes etc.!
+
 # Source Code Layout
 Under this directory, the code and associated files are organised as
 follows:
@@ -106,7 +108,10 @@ follows:
     │   ├── RunCaesarCipher.cpp
     │   ├── RunCaesarCipher.hpp
     │   ├── TransformChar.cpp
-    │   └── TransformChar.hpp
+    │   ├── TransformChar.hpp
+    │   ├── CaesarCipher.hpp
+    │   ├── CaesarCipher.cpp    
+    │   └── CipherMode.hpp
     ├── README.md                   This file, describes the project
     ├── Testing                     Subdirectory for testing the MPAGSCipher library
     │   └── catch.hpp
