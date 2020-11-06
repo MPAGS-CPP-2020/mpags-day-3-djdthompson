@@ -11,6 +11,9 @@ project(MPAGSCipher VERSION 0.1.0)
 #   running make as 'make VERBOSE=1'.
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
+#set the standard C++ library
+set(CMAKE_CXX_STANDARD 11)
+
 # - Don't allow C++ Compiler Vendor Extensions
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -26,6 +29,9 @@ add_executable(mpags-cipher
   MPAGSCipher/ProcessCommandLine.hpp
   MPAGSCipher/RunCaesarCipher.cpp
   MPAGSCipher/RunCaesarCipher.hpp
+  MPAGSCipher/CaesarCipher.hpp
+  MPAGSCipher/CaesarCipher.cpp
+  MPAGSCipher/CipherMode.hpp
   )
 
 target_include_directories(mpags-cipher
